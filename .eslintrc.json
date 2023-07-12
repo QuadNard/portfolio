@@ -21,6 +21,7 @@
     "simple-import-sort"
   ],
   "rules": {
+    "tailwindcss/no-custom-classname": "off",
     "prettier/prettier": [
       "error",
       {

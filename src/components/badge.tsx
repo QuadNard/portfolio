@@ -11,8 +11,7 @@ type TechBadgeProps = ComponentProps<typeof motion.span> & {
 
 export const TechBadge = ({ name, icon, ...props }: TechBadgeProps) => {
   return (
-    // eslint-disable-next-line tailwindcss/no-custom-classname
-    <div className="bg-bubble-100 flex justify-between space-x-1 rounded-lg px-3 py-1 text-sm text-white">
+    <div className="flex justify-between space-x-1 rounded-lg bg-bubble-100 px-3 py-1 text-sm text-white">
       <Image src={icon} alt={name} width={20} height={20} />
       <motion.span className="" {...props}>
         {name}

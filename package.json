@@ -24,6 +24,9 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "classnames": "^2.3.2",
+    "clsx": "^1.2.1",
+    "date-fns": "^2.30.0",
     "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
@@ -32,6 +35,11 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-unused-imports": "^3.0.0",
-    "prettier": "3.0.0"
+    "framer-motion": "^10.12.18",
+    "prettier": "3.0.0",
+    "react-icons": "^4.10.1",
+    "react-use-downloader": "^1.2.4",
+    "tailwind-merge": "^1.13.2",
+    "zod": "^3.21.4"
   }
 }

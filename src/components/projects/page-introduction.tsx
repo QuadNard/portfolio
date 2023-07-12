@@ -7,7 +7,7 @@ import { SectionTitle } from '../title';
 import localFont from 'next/font/local';
 
 const SubFont = localFont({
-  src: '../../../public/font/Matter/Matter-Regular.woff2',
+  src: '../../../public/fonts/sofiapro-light.woff2',
 });
 
 export const PageIntroduction = () => {

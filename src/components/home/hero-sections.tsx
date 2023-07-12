@@ -1,8 +1,8 @@
-/* eslint-disable tailwindcss/no-custom-classname */
 'use client';
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Roboto } from 'next/font/google';
 import { Button } from '../button';
 import { AiOutlineDownload } from 'react-icons/ai';
 import useDownloader from 'react-use-downloader';
@@ -15,12 +15,14 @@ import React from 'react';
 import { techBadgeAnimation } from '@/lib/animation';
 
 // Font files can be colocated inside of `pages`
-const TitleFont = localFont({
-  src: '../../../public/font/Matter/Matter-Bold.woff2',
+const roboto = Roboto({
+  weight: '900',
+  style: ['normal'],
+  subsets: ['latin'],
 });
 
 const SubFont = localFont({
-  src: '../../../public/font/Matter/Matter-Regular.woff2',
+  src: '../../../public/fonts/sofiapro-light.woff2',
 });
 
 interface HeroSectionProps {
@@ -50,7 +52,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ homeInfo }) => {
           transition={{ duration: 0.5 }}
         >
           <p className="matter text-cyan-200">Hi, my name is</p>
-          <div className={TitleFont.className}>
+          <div className={roboto.className}>
             <h2 className="mt-2 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-cyan-700 via-sky-300 to-indigo-700 bg-clip-text text-7xl text-transparent">
               Justin Tulloch
             </h2>

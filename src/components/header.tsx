@@ -7,7 +7,7 @@ import Image from 'next/image';
 import localFont from 'next/font/local';
 
 const SubFont = localFont({
-  src: '../../../public/font/Matter/Matter-Bold.woff2',
+  src: '../../public/fonts/sofiapro-light.woff2',
 });
 
 const NAV_ITEMS = [

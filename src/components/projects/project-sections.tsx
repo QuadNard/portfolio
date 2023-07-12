@@ -7,7 +7,7 @@ import { ProjectSection } from '@/types/page-info';
 import localFont from 'next/font/local';
 
 const SubFont = localFont({
-  src: '../../../public/font/Matter/Matter-Regular.woff2',
+  src: '../../../public/fonts/sofiapro-light.woff2',
 });
 
 type ProjectSectionsProps = {
@@ -43,7 +43,7 @@ export const ProjectSections = ({ sections }: ProjectSectionsProps) => {
             </div>
           </motion.div>
           <motion.div
-            key={`section-${i}`}
+            key={`section-${i}-feature`}
             className="flex flex-col items-center gap-6 md:gap-12"
             {...fadeUpAnimation}
             transition={{ duration: 0.5 }}
