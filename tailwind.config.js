@@ -10,10 +10,10 @@ module.exports = {
     extend: {
       colors: {
         bubble: {
-          100: '#6246ea',
+          100: '#7796ed',
         },
         whiteDark: {
-          100: '#fffffe',
+          100: '#e6e4e8',
         },
         bubbleSecondary: {
           100: '#d1d1e9',

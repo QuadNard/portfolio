@@ -11,7 +11,7 @@ import Image from 'next/image';
 export const KnownTechs = () => {
   return (
     <section className="container py-16">
-      <SectionTitle subtitle="Tech Stack" title="Tech Stack Exp." />
+      <SectionTitle subtitle="proven exp." title="Key Competencies" />
       <div className="mt-[60px] grid w-full grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3">
         {techs?.map((tech, i) => (
           <motion.div
@@ -40,7 +40,7 @@ const KnownTech = ({ tech }: KnownTechProps) => {
   ).replace('ago ', '');
   return (
     // eslint-disable-next-line tailwindcss/no-custom-classname
-    <div className="bg-bubbleSecondary-100 flex flex-col gap-2 rounded-lg p-6 text-black transition-all hover:bg-blue-200/30 hover:text-blue-500">
+    <div className="flex flex-col gap-2 rounded-lg bg-bubbleSecondary-100 p-6 text-black transition-all hover:bg-blue-200/30 hover:text-blue-500">
       <div className="flex items-center justify-between">
         <p className="font-medium">{tech.name}</p>
         <Image src={tech.iconSvg} alt={''} width={100} height={95} />

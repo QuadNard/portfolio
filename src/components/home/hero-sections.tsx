@@ -51,11 +51,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ homeInfo }) => {
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="matter text-cyan-200">Hi, my name is</p>
+          <p className="matter text-black">Hi, my name is</p>
           <div className={roboto.className}>
-            <h2 className="mt-2 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-cyan-700 via-sky-300 to-indigo-700 bg-clip-text text-7xl text-transparent">
-              Justin Tulloch
-            </h2>
+            <h2 className="mt-2 text-5xl text-zinc-700 ">Justin Tulloch</h2>
           </div>
 
           <div className="my-6 text-sm text-gray-400 sm:text-base">
@@ -76,7 +74,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ homeInfo }) => {
 
           <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:gap-5 lg:mt-10">
             <Button
-              className="shadow-button w-max"
+              className="w-max shadow-button"
               onClick={() => download(fileUrl, fileName)}
             >
               Get My Resume/CV
@@ -89,7 +87,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ homeInfo }) => {
                   href={contact.url}
                   key={`contact-${i}`}
                   target="_blank"
-                  className="hover:bg-glass-gradient rounded-md transition-colors"
+                  className="rounded-md transition-colors hover:bg-glass-gradient"
                   rel="noreferrer"
                 >
                   <Tooltip position="top" content={`${contact.title}`}>

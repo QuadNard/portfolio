@@ -10,12 +10,35 @@ import {
 
 const knownTechs: KnownTech[] = [
   {
-    iconSvg: '/react.png',
-    icon: '/react.png',
-    name: 'React',
+    iconSvg: '/coolcloud.png',
+    icon: '/coolcloud.png',
+    name: 'Cloud Support',
     startDate: '2023/01/01, 03:30:00',
   },
-
+  {
+    iconSvg: '/api.png',
+    icon: '/api.png',
+    name: 'Api design',
+    startDate: '2023/01/01, 03:30:00',
+  },
+  {
+    iconSvg: '/webpack.gif',
+    icon: '/webpack.gif',
+    name: 'Web Services',
+    startDate: '2023/01/01, 03:30:00',
+  },
+  {
+    iconSvg: '/agile.png',
+    icon: '/agile.png',
+    name: 'Agile Environment',
+    startDate: '2023/01/01, 03:30:00',
+  },
+  {
+    iconSvg: '/pipeline.gif',
+    icon: '/pipeline.gif',
+    name: 'Data Pipelines',
+    startDate: '2023/01/01, 03:30:00',
+  },
   // Add more known tech objects as needed
 ];
 
@@ -37,7 +60,7 @@ const technologies: Technology[] = [
     icon: '/golang.png',
   },
   {
-    name: 'Typescript',
+    name: 'TypeScript',
     icon: '/typescript_parrot.gif',
   },
   {
@@ -45,28 +68,20 @@ const technologies: Technology[] = [
     icon: '/aws.png',
   },
   {
-    name: 'Linux',
-    icon: '/linux.png',
+    name: 'Vite',
+    icon: '/vite.png',
   },
   {
-    name: 'GraphQL',
-    icon: '/graphql.png',
+    name: 'mysql',
+    icon: '/mysql.png',
   },
   {
-    name: 'fastapi',
-    icon: '/fastapi.png',
-  },
-  {
-    name: 'MongoDB',
-    icon: '/mongodb.png',
-  },
-  {
-    name: 'PostgreSQL',
-    icon: '/postgresql.png',
+    name: 'Angular',
+    icon: '/angular.png',
   },
   {
     name: 'JavaScript',
-    icon: '/js.png',
+    icon: '/javascript-on-fire.gif',
   },
   // Add more technology objects as needed
 ];
@@ -109,7 +124,7 @@ const projects: Project[] = [
     thumbnail: {
       url: '/laptop-PhotoRoom.png',
     },
-    title: 'Project 1',
+    title: 'MaadSounds',
     shortDescription: 'This is project 1',
     technologies: [technologies[0]],
     pageThumbnail: {
@@ -128,7 +143,7 @@ const projects: Project[] = [
     thumbnail: {
       url: '/laptop-2.png',
     },
-    title: 'Project 2',
+    title: 'Giphy App',
     shortDescription: 'This is project 2',
     technologies: [technologies[1]],
     pageThumbnail: {
@@ -139,6 +154,8 @@ const projects: Project[] = [
       rawText: 'Lorem ipsum dolor sit amet',
       text: 'Lorem ipsum dolor sit amet',
     },
+    liveProjectUrl: 'https://example.com/project1',
+    githubUrl: 'https://github.com/user/project1',
   },
   // Add more project objects as needed
 ];
@@ -146,13 +163,13 @@ const projects: Project[] = [
 const workexperiences: WorkExperience[] = [
   {
     companyLogo: {
-      url: '/imgur.png',
+      url: '/open_source.png',
     },
-    role: 'Software Engineer',
-    companyName: 'Company 1',
+    role: 'Software Engineer Contributor',
+    companyName: 'Open Source',
     companyUrl: 'https://example.com/company1',
-    startDate: '2020-01-01',
-    endDate: '2021-01-01',
+    startDate: '2023/01/01',
+    endDate: '2023/01/01',
     technologies: [technologies[0]],
     description: {
       rawText: 'Lorem ipsum dolor sit amet',
@@ -160,13 +177,13 @@ const workexperiences: WorkExperience[] = [
   },
   {
     companyLogo: {
-      url: '/profile.webp',
+      url: '/disc.webp',
     },
-    role: 'Frontend Developer',
-    companyName: 'Company 2',
+    role: ' Freelance Frontend Developer',
+    companyName: 'MaadSounds',
     companyUrl: 'https://example.com/company2',
-    startDate: '2021-01-01',
-    endDate: '2022-01-01',
+    startDate: '2023/01/01',
+    endDate: '2023/01/01',
     technologies: [technologies[1]],
     description: {
       rawText: 'Lorem ipsum dolor sit amet',

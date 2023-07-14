@@ -50,12 +50,7 @@ const ProjectCard = ({ proj }: ProjectCardProps) => {
           {...fadeUpAnimation}
           transition={{ duration: 0.7 }}
         >
-          <Image
-            width={20}
-            height={20}
-            alt=""
-            src="/images/icons/project-title-icon.svg"
-          />
+          <Image width={20} height={20} alt="" src="/film-projector.gif" />
           {proj.title}
         </motion.h3>
 
@@ -93,7 +88,7 @@ const ProjectCard = ({ proj }: ProjectCardProps) => {
 export const HighlightedProjects = ({ projects }: HighlightedProjectsProps) => {
   return (
     <section className="container py-16">
-      <SectionTitle subtitle="List" title="List of Projects" />
+      <SectionTitle subtitle="projects" title="Recent Projects" />
       <HorizontalDivider className="mb-16" />
 
       <div>

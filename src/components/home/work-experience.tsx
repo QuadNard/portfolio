@@ -33,7 +33,7 @@ const ExperienceItem = ({ experience }: ExperienceItemProps) => {
   const formattedStartDate = format(startDate, 'MMM yyyy', { locale: ptBR });
   const formattedEndDate = endDate
     ? format(new Date(endDate), 'MMM yyyy', { locale: ptBR })
-    : 'O momento';
+    : 'Present';
 
   const end = endDate ? new Date(endDate) : new Date();
 
@@ -43,12 +43,11 @@ const ExperienceItem = ({ experience }: ExperienceItemProps) => {
 
   const formattedDuration =
     years > 0
-      ? `${years} ano${years > 1 ? 's' : ''}${
-          monthsRemaining > 0
-            ? ` e ${monthsRemaining} mes${monthsRemaining > 1 ? 'es' : ''}`
-            : ''
-        }`
-      : `${months} mes${months > 1 ? 'es' : ''}`;
+      ? `${years} year${years > 1 ? 's' : ''}${monthsRemaining > 0
+        ? ` and ${monthsRemaining} month${monthsRemaining > 1 ? 's' : ''}`
+        : ''
+      }`
+      : `${months} month${months > 1 ? 's' : ''}`;
 
   return (
     <motion.div

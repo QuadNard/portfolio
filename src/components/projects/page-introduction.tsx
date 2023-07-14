@@ -15,7 +15,7 @@ export const PageIntroduction = () => {
     // eslint-disable-next-line tailwindcss/no-custom-classname
     <section className="bg-hero-image flex h-[450px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-2 lg:h-[630px]">
       <SectionTitle
-        subtitle="projects"
+        subtitle="project list"
         title="Built with ❤️ for Engineering."
         className="items-center text-center [&>h3]:text-4xl"
       />

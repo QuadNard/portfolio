@@ -73,7 +73,7 @@ export const ProjectDetails = ({ project }: ProjectDetailsProps) => {
       </motion.div>
       <Link href="/projects">
         <HiArrowNarrowLeft size={20} />
-        Voltar para projetos
+        Go Back To Project List
       </Link>
     </section>
   );
